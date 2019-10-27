@@ -1,5 +1,5 @@
-import express, { Express, Request, Response } from "express";
-import mongoose from "mongoose";
+import express, { Express, Request, Response } from 'express';
+import mongoose from 'mongoose';
 
 const app: Express = express();
 
@@ -10,7 +10,7 @@ app.get('/', (_req: Request, res: Response) => {
 });
 
 app.listen(port, async () => {
-  await mongoose.connect("mongodb://test:test12345678@ds139768.mlab.com:39768/tsexpress", {
+  await mongoose.connect('mongodb://test:test12345678@ds139768.mlab.com:39768/tsexpress', {
     useNewUrlParser: true,
     useUnifiedTopology: true
   });
